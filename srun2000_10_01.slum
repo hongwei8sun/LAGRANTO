@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -p huce_intel
+#SBATCH -N 1		# number of nodes
+#SBATCH -n 1		# number of cores
+#SBATCH -t 7-00:00:00	# time
+#SBATCH --mem-per-cpu=10000	# MB
+#SBATCH -o myout_%j.out
+#SBATCH -e myerr_%j.err
+
+
+# 1
+caltra 20001001_00 20101001_00 startf.final traj_20001001.1 -o 1440 -j
+
+# 4
+caltra 20001004_00 20101004_00 startf.final traj_20001004.1 -o 1440 -j 
+
+# 7
+caltra 20001007_00 20101007_00 startf.final traj_20001007.1 -o 1440 -j 
+
+# 10
+caltra 20001010_00 20101010_00 startf.final traj_20001010.1 -o 1440 -j 
+
+# 13
+caltra 20001013_00 20101013_00 startf.final traj_20001013.1 -o 1440 -j 
+
+
