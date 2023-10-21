@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#SBATCH -n 1                    # Number of cores
+#SBATCH -N 1                    # Ensure that all cores are on one machine
+#SBATCH -c 1                   # 48 processors in one node
+#SBATCH -t 7-00:00:00           # Runtime in D-HH:MM, minimum of 10 minutes (DD-HH:MM:SS)
+#SBATCH -p huce_intel           # Partition to submit to
+#SBATCH --mem=20000             # Memory (MB) pool for all cores (184GB is maximum)
+##SBATCH --mem-per-cpu=3000
+#SBATCH -o myoutput_%j.out      # File to which STDOUT will be written, %j inserts jobid
+#SBATCH -e myerrors_%j.err      # File to which STDERR will be written, %j inserts jobid
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export OMP_STACKSIZE=500m
+
+python Global_particle_distribution_For_different_injection_heights_2004.py
+
+##srun -n $SLURM_NTASKS --mpi=pmi2 ./geos.mp
+##srun -n 1 --cpus-per-task=4 --mpi=pmi2 ./geos.mp
+##./geos.mp                 # 执行命令
