@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cdo setmisstonn ERA5_monmean_01.nc ERA5_monmean_ensmean_setmisstonn_01.nc
+cdo setmisstonn ERA5_monmean_02.nc ERA5_monmean_ensmean_setmisstonn_02.nc
+cdo setmisstonn ERA5_monmean_03.nc ERA5_monmean_ensmean_setmisstonn_03.nc
+cdo setmisstonn ERA5_monmean_04.nc ERA5_monmean_ensmean_setmisstonn_04.nc
+cdo setmisstonn ERA5_monmean_05.nc ERA5_monmean_ensmean_setmisstonn_05.nc
+cdo setmisstonn ERA5_monmean_06.nc ERA5_monmean_ensmean_setmisstonn_06.nc
+cdo setmisstonn ERA5_monmean_07.nc ERA5_monmean_ensmean_setmisstonn_07.nc
+cdo setmisstonn ERA5_monmean_08.nc ERA5_monmean_ensmean_setmisstonn_08.nc
+cdo setmisstonn ERA5_monmean_09.nc ERA5_monmean_ensmean_setmisstonn_09.nc
+cdo setmisstonn ERA5_monmean_10.nc ERA5_monmean_ensmean_setmisstonn_10.nc
+cdo setmisstonn ERA5_monmean_11.nc ERA5_monmean_ensmean_setmisstonn_11.nc
+cdo setmisstonn ERA5_monmean_12.nc ERA5_monmean_ensmean_setmisstonn_12.nc
+
