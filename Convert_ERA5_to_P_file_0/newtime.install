@@ -1,0 +1,16 @@
+#!/bin/csh
+
+module load pgi/21.2-fasrc01
+set tool = newtime
+
+\rm -f ${tool}
+
+echo "pgf90 -O -o ${tool} ${tool}.f "  
+pgf90 -O -o ${tool} ${tool}.f    
+
+if ( ! -f ${tool} ) then
+  echo "ERROR: compilation of <$tool> failed... exit"
+  exit 1
+endif
+
+exit 0
