@@ -1,0 +1,1 @@
+/n/home12/hongwei/HONGWEI//lagranto_era5_0.2um//goodies/trainfo.sh

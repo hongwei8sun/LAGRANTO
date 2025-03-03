@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH -p seas_compute
+#SBATCH -N 1		# number of nodes
+#SBATCH -n 1		# number of cores
+#SBATCH -t 7-00:00:00	# time
+#SBATCH --mem-per-cpu=10000	# MB
+#SBATCH -o myout_%j.out
+#SBATCH -e myerr_%j.err
+
+
+# 1
+caltra 20000101_23 20000331_00 startf.final traj_20000101_23.1 -o 60 -j
+caltra 20000101_22 20000331_00 startf.final traj_20000101_22.1 -o 60 -j
+caltra 20000101_21 20000331_00 startf.final traj_20000101_21.1 -o 60 -j
+caltra 20000101_20 20000331_00 startf.final traj_20000101_20.1 -o 60 -j
+caltra 20000101_19 20000331_00 startf.final traj_20000101_19.1 -o 60 -j
+caltra 20000101_18 20000331_00 startf.final traj_20000101_18.1 -o 60 -j
+caltra 20000101_17 20000331_00 startf.final traj_20000101_17.1 -o 60 -j
+caltra 20000101_16 20000331_00 startf.final traj_20000101_16.1 -o 60 -j
+caltra 20000101_15 20000331_00 startf.final traj_20000101_15.1 -o 60 -j
+caltra 20000101_14 20000331_00 startf.final traj_20000101_14.1 -o 60 -j
+caltra 20000101_13 20000331_00 startf.final traj_20000101_13.1 -o 60 -j
+caltra 20000101_12 20000331_00 startf.final traj_20000101_12.1 -o 60 -j
+caltra 20000101_11 20000331_00 startf.final traj_20000101_11.1 -o 60 -j
+caltra 20000101_10 20000331_00 startf.final traj_20000101_10.1 -o 60 -j
+caltra 20000101_09 20000331_00 startf.final traj_20000101_09.1 -o 60 -j
+caltra 20000101_08 20000331_00 startf.final traj_20000101_08.1 -o 60 -j
+caltra 20000101_07 20000331_00 startf.final traj_20000101_07.1 -o 60 -j
+caltra 20000101_06 20000331_00 startf.final traj_20000101_06.1 -o 60 -j
+caltra 20000101_05 20000331_00 startf.final traj_20000101_05.1 -o 60 -j
+caltra 20000101_04 20000331_00 startf.final traj_20000101_04.1 -o 60 -j
+caltra 20000101_03 20000331_00 startf.final traj_20000101_03.1 -o 60 -j
+caltra 20000101_02 20000331_00 startf.final traj_20000101_02.1 -o 60 -j
+caltra 20000101_01 20000331_00 startf.final traj_20000101_01.1 -o 60 -j
+caltra 20000101_00 20000331_00 startf.final traj_20000101_00.1 -o 60 -j
