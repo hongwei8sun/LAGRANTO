@@ -1,0 +1,41 @@
+2021-10-29 15:59:33,643 INFO Welcome to the CDS
+2021-10-29 15:59:33,643 INFO Sending request to https://cds.climate.copernicus.eu/api/v2/resources/reanalysis-era5-complete
+2021-10-29 15:59:33,757 INFO Request is queued
+2021-10-29 20:17:31,738 WARNING Recovering from HTTP error [500 Internal Server Error], attemps 0 of 500
+2021-10-29 20:17:31,803 WARNING Retrying in 120 seconds
+2021-10-29 20:19:31,807 INFO Retrying now...
+2021-10-29 20:20:02,237 WARNING Recovering from HTTP error [500 Internal Server Error], attemps 1 of 500
+2021-10-29 20:20:02,237 WARNING Retrying in 120 seconds
+2021-10-29 20:22:02,337 INFO Retrying now...
+2021-10-29 20:22:32,766 WARNING Recovering from HTTP error [500 Internal Server Error], attemps 2 of 500
+2021-10-29 20:22:32,767 WARNING Retrying in 120 seconds
+2021-10-29 20:24:32,867 INFO Retrying now...
+2021-10-29 21:04:59,263 INFO Request is failed
+2021-10-29 21:04:59,299 ERROR Message: the request you have submitted is not valid
+2021-10-29 21:04:59,299 ERROR Reason:  Expected 33976, got 0.; Request failed; Some errors reported
+2021-10-29 21:04:59,299 ERROR   Traceback (most recent call last):
+2021-10-29 21:04:59,299 ERROR     File "/opt/cdstoolbox/cdscompute/cdscompute/cdshandlers/services/handler.py", line 55, in handle_request
+2021-10-29 21:04:59,299 ERROR       result = cached(context.method, proc, context, context.args, context.kwargs)
+2021-10-29 21:04:59,299 ERROR     File "/opt/cdstoolbox/cdscompute/cdscompute/caching.py", line 108, in cached
+2021-10-29 21:04:59,299 ERROR       result = proc(context, *context.args, **context.kwargs)
+2021-10-29 21:04:59,299 ERROR     File "/opt/cdstoolbox/cdscompute/cdscompute/services.py", line 118, in __call__
+2021-10-29 21:04:59,299 ERROR       return p(*args, **kwargs)
+2021-10-29 21:04:59,299 ERROR     File "/opt/cdstoolbox/cdscompute/cdscompute/services.py", line 59, in __call__
+2021-10-29 21:04:59,299 ERROR       return self.proc(context, *args, **kwargs)
+2021-10-29 21:04:59,299 ERROR     File "/home/cds/cdsservices/services/mars/mars.py", line 50, in external
+2021-10-29 21:04:59,300 ERROR       return mars(context, request, **kwargs)
+2021-10-29 21:04:59,300 ERROR     File "/home/cds/cdsservices/services/mars/mars.py", line 17, in mars
+2021-10-29 21:04:59,300 ERROR       execute_mars(context, requests)
+2021-10-29 21:04:59,300 ERROR     File "/home/cds/cdsservices/services/mars/execute_mars.py", line 18, in execute_mars
+2021-10-29 21:04:59,300 ERROR       context.run_command("/usr/local/bin/mars", tmp, exception=MarsException)
+2021-10-29 21:04:59,300 ERROR     File "/opt/cdstoolbox/cdscompute/cdscompute/context.py", line 209, in run_command
+2021-10-29 21:04:59,300 ERROR       raise exception(call, proc.returncode, output)
+2021-10-29 21:04:59,300 ERROR   home.cds.cdsservices.services.mars.__init__.py.exceptions.MarsException: Expected 33976, got 0.; Request failed; Some errors reported
+Traceback (most recent call last):
+  File "API_2000.py", line 63, in <module>
+    c.retrieve('reanalysis-era5-complete', {
+  File "/n/home12/hongwei/.conda/envs/SUNenv/lib/python3.8/site-packages/cdsapi/api.py", line 348, in retrieve
+    result = self._api("%s/resources/%s" % (self.url, name), request, "POST")
+  File "/n/home12/hongwei/.conda/envs/SUNenv/lib/python3.8/site-packages/cdsapi/api.py", line 506, in _api
+    raise Exception(
+Exception: the request you have submitted is not valid. Expected 33976, got 0.; Request failed; Some errors reported.

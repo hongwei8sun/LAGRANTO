@@ -1,0 +1,3 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitmon: Processed 1 variable over 2928 timesteps [9.44s 266MB].

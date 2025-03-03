@@ -1,0 +1,36 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [5.33s 110MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 232 timesteps [4.02s 107MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [4.81s 110MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 240 timesteps [4.03s 108MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [5.00s 110MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 240 timesteps [4.20s 108MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [6.26s 110MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [6.03s 110MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 240 timesteps [6.18s 108MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [6.98s 110MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 240 timesteps [6.92s 108MB].
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+cdo    splitday: Processed 1 variable over 248 timesteps [6.00s 110MB].
